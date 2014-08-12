@@ -1,0 +1,121 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/flyout_4level.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
+=================================================================== */
+
+html, body {margin:0; padding:0; width:100%; height:100%; overflow:hidden;}
+body {font-family:helvetica; font-size:76%;}
+#background{position:absolute; z-index:1; width:100%; height:100%;}
+#scroller {position:absolute; width:100%; height:100%; top:0; left:0; overflow:auto; z-index:2;}
+#content {font-family: helvetica; font-size: 12pt; padding:5px 100px 20px 200px;}
+p {line-height:1.8em; text-align:justify;}
+div#punch {float: left; width: 400px;
+text-align: center; padding: 0.1em 0.1em 0;}
+H1 {font-style: bold; font-size: 22pt; color: #660000}
+H2 {font-style: bold; font-size: 18pt; color: #660000}
+H3 {font-size: 15pt; color: #660000}
+H4 {font-size: 12pt; color: #660000}
+H5 {font-size: 9pt; color: #660000}
+H6 {font-size: 8pt; color: #660000}
+a:link { text-decoration: none; font-family: helvetica; color:#315284;}
+a:active { text-decoration: none; font-family: helvetica; color:#315284;}
+a:visited { text-decoration: none; font-family: helvetica; color:#315284;}
+a:hover { color: #660000; text-decoration: none; font-family: helvetica;}
+
+.menu {
+height:200px;
+font-size:90%;
+margin:0px 0px 0px 0px; /* this page only */ }
+/* remove all the bullets, borders and padding from the default list styling */
+.menu ul {
+position:relative;
+z-index:500;
+padding:0;
+margin:0;
+list-style-type:none;
+width:150px;
+}
+/* style the list items */
+.menu li {
+background:#660000 url(http://nso.org.uk/shade.gif);
+height:26px;
+/* for IE7 */
+float:left;
+}
+.menu li.sub {background:#660000 url(http://nso.org.uk/sub.gif) no-repeat right center;} /* get rid of the table */
+.menu table {position:absolute; border-collapse:collapse; top:0; left:0; z-index:100; font-size:1em;}
+/* style the links */
+.menu a, .menu a:visited {
+font-family:helvetica;
+display:block; text-decoration:none;
+height:25px;
+line-height:25px;
+width:149px;
+color:#ffc;
+text-indent:5px;
+border:1px solid #ffc;
+border-width:0 1px 1px 1px;
+}
+/* hack for IE5.5 */
+* html .menu a, * html .menu a:visited {width:150px; w\idth:149px;}
+/* style the link hover */
+* html .menu a:hover {color:#660000; background:#aaa; position:relative;}
+.menu li:hover {position:relative;}
+/* For accessibility of the top level menu when tabbing */
+.menu a:active, .menu a:focus {color:#660000; background:#aaa;}
+/* retain the hover colors for each sublevel IE7 and Firefox etc */
+.menu li:hover > a {color:#660000; background:#aaa;}
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+.menu li ul {
+visibility:hidden;
+position:absolute;
+top:-30px;
+/* set up the overlap (minus the overrun) */
+left:100px;
+/* set up the overrun area */
+padding:30px;
+/* this is for IE to make it interpret the overrrun padding */
+background:transparent url(http://nso.org.uk/transparent.gif);
+}
+/* for browsers that understand this is all you need for the flyouts */
+.menu li:hover > ul {visibility:visible;}
+/* for IE5.5 and IE6 you need to style each level hover */
+/* keep the third level+ hidden when you hover on first level link */
+.menu ul a:hover ul ul{
+visibility:hidden;
+}
+/* keep the fourth level+ hidden when you hover on second level link */
+.menu ul a:hover ul a:hover ul ul{
+visibility:hidden;
+}
+/* keep the fifth level hidden when you hover on third level link */
+.menu ul a:hover ul a:hover ul a:hover ul ul{
+visibility:hidden;
+}
+/* make the second level visible when hover on first level link */
+.menu ul a:hover ul {
+visibility:visible;
+}
+/* make the third level visible when you hover over second level link */
+.menu ul a:hover ul a:hover ul{ visibility:visible;
+}
+/* make the fourth level visible when you hover over third level link */
+.menu ul a:hover ul a:hover ul a:hover ul { visibility:visible;
+}
+/* make the fifth level visible when you hover over fourth level link */
+.menu ul a:hover ul a:hover ul a:hover ul a:hover ul { visibility:visible;
+}
+.WGT_bt_s{
+width: 660px;
+font-size: 12pt;}
+table.WGT_bt_s_t{ background: rgb(23, 62, 91)
+url(http://www.wegottickets.com/resources/header_blank_small.jpg)
+top left no-repeat; height: 107px; } td.WGT_bt_s_c{ background: transparent
+url(http://www.wegottickets.com/resources/header_blank_small.jpg)
+top right no-repeat;vertical-align: middle !important; text-align: left !important; }
+a.WGT_bt_s_l{ width: auto; margin: 0 290px 0 10px !important;
+text-decoration: none !important; color: white !important;
+display: block; } a.WGT_bt_s_l:hover{ color: rgb(185, 224, 253) !important; }
