@@ -94,3 +94,11 @@ footer {
 .jumbotron h5, .jumbotron h6, .jumbotron p {
     margin-bottom: 8px;
 }
+
+/* POSTER */
+
+.poster {
+    background: url('../images/backgrounds/2015_02.jpg');
+    height: 100%;
+    width: 100%;
+}
