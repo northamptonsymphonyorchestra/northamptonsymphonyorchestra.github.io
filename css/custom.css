@@ -136,7 +136,10 @@ footer {
 
 .responsive-iframe-container iframe,
 .vresponsive-iframe-container object,
-.vresponsive-iframe-container embed {
+.vresponsive-iframe-container embed,
+.responsive-form-container iframe,
+.vresponsive-form-container object,
+.vresponsive-form-container embed {
     position: absolute;
     top: 0;
     left: 0;
