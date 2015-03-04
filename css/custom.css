@@ -69,6 +69,14 @@ body {
         line-height: 2.5rem;
         color: #222;
     }
+
+    .responsive-form-container {
+         position: relative;
+         padding-bottom: 56.25%;
+         padding-top: 30px;
+         height: 1800px;
+         overflow: hidden;
+    }
 }
 
 @media (min-width: 550px) {
@@ -110,7 +118,15 @@ footer {
 }
 
 /* Responsive iFrame */
- .responsive-iframe-container {
+.responsive-iframe-container {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+}
+
+.responsive-form-container {
      position: relative;
      padding-bottom: 56.25%;
      padding-top: 30px;
