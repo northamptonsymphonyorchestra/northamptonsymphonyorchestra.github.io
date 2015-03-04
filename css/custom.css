@@ -117,6 +117,18 @@ body {
     .navbar .logo-small {
         display: none;
     }
+
+    .calendar {
+         height: 200px;
+    }
+
+    .join {
+        height: 1000px;
+    }
+
+    .tickets {
+        height: 1700px;
+    }
 }
 
 /* Larger than tablet */
@@ -126,6 +138,14 @@ body {
     }
     .navbar img {
         margin-right: 35px;
+    }
+
+    .join {
+        height: 800px;
+    }
+
+    .tickets {
+        height: 1400px;
     }
 }
 
