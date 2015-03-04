@@ -76,10 +76,7 @@ body {
 
 .responsive-iframe-container iframe,
 .vresponsive-iframe-container object,
-.vresponsive-iframe-container embed,
-.responsive-form-container iframe,
-.vresponsive-form-container object,
-.vresponsive-form-container embed {
+.vresponsive-iframe-container embed {
     position: absolute;
     top: 0;
     left: 0;
@@ -100,12 +97,16 @@ body {
         color: #222;
     }
 
-    .responsive-form-container {
-         position: relative;
-         padding-bottom: 56.25%;
-         padding-top: 30px;
-         height: 1800px;
-         overflow: hidden;
+    .calendar {
+         height: 200px;
+    }
+
+    .join {
+        height: 1600px;
+    }
+
+    .tickets {
+        height: 1600px;
     }
 }
 
