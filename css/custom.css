@@ -149,6 +149,16 @@ body {
     }
 }
 
+@media (max-width: 749px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
     .navbar-link {
@@ -164,6 +174,14 @@ body {
 
     .tickets {
         height: 1200px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
     }
 }
 
